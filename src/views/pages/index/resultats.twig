@@ -1,0 +1,80 @@
+{% extends"layouts/default.html" %} 
+
+{% block content %}
+
+    <div class="wrapper-central wrapper-quizz">
+        <div class="top-quizz">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="inspiration">Votre inspiration cuisine</li>
+                    </ol>
+                </nav>
+                <div class="cover-quizz">
+                    <a href="/etape1" class="link-relancer"><img src="/images/relancer-test.svg" class="img-fluid" alt="" /></a>
+                    <img src="/images/mess-quizz-6.svg" class="img-fluid" alt="Lapeyre - Style de votre cuisine" />
+                </div>
+            </div>
+        </div>
+        <div class="main-quizz">
+            <div class="container">
+                <div id="quizz-container">
+                    <div class="row">
+                        <div class="col-10 offset-lg-1 col-choices col-resultats">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="card-choice">
+                                        <div class="content">
+                                            <div class="illus" style="background:url(/images/etape-1-contemporaine.jpg) no-repeat center center;"></div>
+                                            <div class="bottom"><h3 class="text-center">Cuisine Eyre</h3></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="card-choice">
+                                        <div class="content">
+                                            <div class="illus" style="background:url(/images/etape-1-retro.jpg) no-repeat center center;"></div>
+                                            <div class="bottom"><h3 class="text-center">Cuisine Bistro</h3></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="card-choice">
+                                        <div class="content">
+                                            <div class="illus" style="background:url(/images/etape-5-plus.jpg) no-repeat center center;"></div>
+                                            <div class="bottom"><h3 class="text-center">Cuisine Graphik</h3></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <a href="#" class="btn-final">Découvrez l'intégralité de notre catalogue cuisine</a>
+                                </div>
+                                <div class="col-6 offset-lg-3 mt-4 share text-center">
+                                    <p>Partagez ce test pour permettre à votre entourage de découvrir la cuisine Lapeyre de leur rêve.</p>
+                                    <a href="#" class="btn-share fb">
+                                        Partager
+                                    </a>
+                                    <a href="#" class="btn-share twitter">
+                                        Tweet
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <nav class="nav-pagination d-flex justify-content-start d-lg-none">
+                                <a href="/etape4" class="prev">Précédent</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-resultats">
+                <div class="container">
+                    <h4>Nos solutions pour des achats simplifiés</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

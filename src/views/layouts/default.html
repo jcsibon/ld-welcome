@@ -13,12 +13,12 @@
     </head>
     <body>
         {% include 'sprite/sprite.svg' %}
-        <img src="/images/header-mobile.png" class="img-fluid d-block d-sm-none">
+        <img src="/images/header-mobile.png" class="img-fluid d-block d-sm-none mx-auto">
         <img src="/images/header.png" class="img-fluid d-none d-sm-block">
     	{# {% include 'storeWidgets/nav.twig' %} #}
     	{% block content %}
     	{% endblock %}
-        <img src="/images/footer-mobile.png" class="img-fluid d-block d-sm-none">
+        <img src="/images/footer-mobile.png" class="img-fluid d-block d-sm-none mx-auto">
         <img src="/images/footer.png" class="img-fluid d-none d-sm-block">
     </body>
 </html>

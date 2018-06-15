@@ -1,0 +1,72 @@
+{% extends"layouts/default.html" %} 
+
+{% block content %}
+
+    <div class="wrapper-central wrapper-quizz">
+        <div class="top-quizz">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="inspiration">Votre inspiration cuisine</li>
+                    </ol>
+                </nav>
+                <div class="cover-quizz">
+                    <a href="/etape1" class="link-precedent"><img src="/images/precedent-link.svg" class="img-fluid" alt="" /></a>
+                    <img src="/images/mess-quizz-2.svg" class="img-fluid" alt="Lapeyre - Style de votre cuisine" />
+                </div>
+            </div>
+        </div>
+        <div class="main-quizz">
+            <div class="container">
+                <div id="quizz-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-2">
+                            <nav class="nav-steps d-sm-flex justify-content-sm-center justify-content-md-center d-lg-block align-items-center">
+                                <h2>étapes</h2>
+                                <ul>
+                                    <li><span>1</span></li>
+                                    <li class="active"><span>2<strong>. Surface</strong></span></li>
+                                    <li><span>3</span></li>
+                                    <li><span>4</span></li>
+                                    <li><span>5</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-9 col-choices">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <div class="card-choice">
+                                        <a href="/etape3" class="fake-link"><span class="d-none">Cuisine Ytrac</span></a>
+                                        <div class="content">
+                                            <div class="illus" style="background:url(/images/etape-2-surface-plane.jpg) no-repeat center center;"></div>
+                                            <div class="bottom"><h3 class="text-center">Cuisine Ytrac</h3></div>
+                                        </div>
+                                        <a href="#" class="btn-choice">Avec des surfaces planes</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center active">
+                                    <div class="card-choice">
+                                        <a href="/etape3" class="fake-link"><span class="d-none">Cuisine Bistro</span></a>
+                                        <div class="content">
+                                            <div class="illus" style="background:url(/images/etape-2-surface-cadre.jpg) no-repeat center center;"></div>
+                                            <div class="bottom"><h3 class="text-center">Cuisine Bistro</h3></div>
+                                        </div>
+                                        <a href="#" class="btn-choice">Avec des surfaces à cadre</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <nav class="nav-pagination d-flex justify-content-between">
+                                <a href="/etape1" class="prev">Précédent</a>
+                                <a href="/etape3" class="next">Suivant</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
