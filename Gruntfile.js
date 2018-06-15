@@ -18,9 +18,10 @@ module.exports = function(grunt) {
         }
       }
     },
-    concat: { 
+    concat: {
        dist: {
          src: [
+           'src/views/*.scss',
            'src/views/*/*/*.scss',
          ],
          dest: 'src/scss/views.scss'
@@ -38,7 +39,10 @@ module.exports = function(grunt) {
         atBegin: true,
       },
       scripts: {
-        files: 'src/scss/**/*.scss',
+        files: [
+          'src/scss/**/*.scss',
+          'src/views/**/*.scss'
+        ],
         tasks: 'css'
       }
     }

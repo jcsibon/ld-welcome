@@ -30,7 +30,7 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-$white: #FFF; 
+$white: #FFF;
 $blue: #3970ca;
 $green: #59b957;
 $orange: #fe8105;
@@ -48,6 +48,7 @@ $theme-colors: (
     warning: $yellow,
     danger: $red,
     light: $gray-light,
+    gray: $gray-600,
     dark: $gray-800
 );
 
@@ -60,16 +61,14 @@ $link-hover-decoration: none;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-$font-family-sans-serif: 'Gotham Book Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: 'Gotham Book',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $title-font: 'Roboto', sans-serif;
-$styled-font:'Gotham Book Regular',sans-serif;
-$base-font:'Gotham Book Regular',sans-serif;
+$styled-font:'Gotham Book',sans-serif;
+$base-font:'Gotham Book',sans-serif;
 $font-family-1: 'DinCondensed', sans-serif;
 $font-family-2: 'Roboto Condensed', sans-serif;
 
-$border-radius:0;           // .25rem !default;
-$border-radius-lg:0;        // .3rem !default;
-$border-radius-sm:0;        // .2rem !default;
+$border-radius:2px;           // .25rem !default;
 
 // Navbar
 $navbar-dark-color:                 rgba($white,0.8);
@@ -91,6 +90,34 @@ $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1340px 
-)
-    // 1140px
+    xl: 1340px
+);
+
+/* Altered vars */
+$font-size-base: .9rem;
+$card-border-width: 0;
+
+// Buttons
+$btn-border-width: 2px;
+$btn-font-weight: bold;
+$btn-border-radius: 3px;
+// $btn-border-radius-sm: $btn-border-radius;
+
+$btn-padding-y: .75rem;
+$btn-padding-x: 1rem;
+
+$btn-padding-y-sm: .5rem;
+$btn-padding-x-sm: 1rem;
+$btn-line-height-sm: 1rem;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+
+// $breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-bg: none;
+$breadcrumb-divider-color: white;
+$breadcrumb-active-color: white;
+$breadcrumb-divider: '>';

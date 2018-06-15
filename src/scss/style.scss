@@ -6,6 +6,19 @@
   src: url('../fonts/DinCond-bold.otf');
 }
 
+@font-face {
+  font-family: 'Gotham Book';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/GothamBook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/GothamBookBold.otf');
+}
 
 // @import '_module__forms';
 // @import "_module__accordion";
@@ -98,22 +111,5 @@ p {
   }
 }
 svg { fill: currentColor; vertical-align:middle;  }
-
-/*
-ul li .card{
-  &.is-active{
-    border-color: $red;
-    cursor: pointer;
-  }
-  &.is-new{
-    border-color: $gray-500;
-    cursor: pointer;
-  }
-  &:hover{
-    border-color: $red-secondary;
-    cursor: pointer;
-  }
-}
-*/
 
 @import 'views';
