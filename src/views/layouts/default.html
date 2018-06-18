@@ -5,10 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Lapeyre</title>
+        <link href="/css/owl.carousel.min.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="/scripts/owl.carousel.min.js"></script>
 
     </head>
     <body>
@@ -20,5 +22,30 @@
     	{% endblock %}
         <img src="/images/footer-mobile.png" class="img-fluid d-block d-sm-none mx-auto">
         <img src="/images/footer.png" class="img-fluid d-none d-sm-block">
+
+    <script>
+        $(document).ready(function(){
+            if($('.owl-carousel').length){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    items: 2,
+                    navText: ['<div class="red-nav prev"></div>' , '<div class="red-nav next"></div>'],
+                    responsive:{
+                        0:{
+                            items:2,
+                            center: true,
+                            loop: false,
+                            dots: true
+                        },
+                        768:{
+                            items:2
+                        }
+                    }
+                });
+            }
+        });
+    </script>
     </body>
 </html>
