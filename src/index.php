@@ -20,4 +20,14 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('pages/index/index.twig');
 });
 
+$app->get('/magasin', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('pages/magasin/index.twig');
+});
+
+$app->get('/univers-cuisine', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('pages/univers-cuisine/index.twig');
+});
+
 $app->run();
